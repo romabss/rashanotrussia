@@ -64,7 +64,19 @@
             </div>
         </div>
     </div>
-    <script src="js/script.js"></script>
+    <script>
+        function hamburg(){
+    const navbar = document.querySelector(".dropdown")
+    navbar.style.transform = "translateY(0px)"
+    navbar.classList.add('open'); // Add a class to indicate open state
+}
+
+function cancel(){
+    const navbar = document.querySelector(".dropdown")
+    navbar.style.transform = "translateY(-500px)"
+    navbar.classList.remove('open'); // Remove the class to indicate closed state
+}
+    </script>
 </section>
 <!--End of Navbar-->
 
